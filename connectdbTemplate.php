@@ -1,8 +1,8 @@
 <?php
 	//Personal Info
-	$dbname ="ke571033";
-	$dbusername = "ke571033";
-	$dbpass = "Super55!";
+	$dbname ="DBNAME";
+	$dbusername = "USERNAME";
+	$dbpass = "PASS!";
 	$dbhost = "sulley.cah.ucf.edu";
 
 	//Connects to sulley mysqli
