@@ -35,10 +35,10 @@
 			  
 						<div class="navbar-collapse collapse">
 							<div class="navbar-form navbar-right">
-								<form action="catalog.php" method="get" class="input-group" role="search">
-									<input type="text" class="form-control" placeholder="Search">
+								<form action="search.php" method="post" class="input-group" role="search">
+									<input type="text" class="form-control" name="search_term" placeholder="Search">
 									<div class="input-group-btn">
-										<a class="btn btn-default" href="catalog.php"><span class="glyphicon glyphicon-search"></span></a>
+										<a class="btn btn-default" href="search.php"><button type="submit"><span class="glyphicon glyphicon-search"></span></button></a>
 									</div>
 								</form>
 							</div>       
