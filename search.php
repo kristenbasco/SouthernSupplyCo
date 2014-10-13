@@ -7,7 +7,7 @@
 
 		<?php 
 			include 'header.php';
-			include 'connectdb.php';
+			include 'includes.php';
 
 			if(isset($_POST['search_term'])){
 				$search_term = $_POST['search_term'];
