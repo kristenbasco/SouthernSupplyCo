@@ -1,0 +1,306 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: #FFF;
+
+}
+
+h1,h2,h3,h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+h1{
+	font-size: 30px;
+	margin: 0;
+}
+
+h2{
+}
+
+
+/*---Stuff for header and navbar*/
+.logo{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 120px;
+}
+
+.login{
+	margin-top: 130px;
+}
+
+.login>a{
+	color: #444;
+}
+
+.navbar{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	border: 0;
+}
+
+.navbar>.container{
+	background-color: #FFF;
+
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #d5e1ea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#d5e1ea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#d5e1ea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#d5e1ea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#d5e1ea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#d5e1ea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d5e1ea',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 15px;
+	border:1px solid #ccc;
+	padding-left: 0;
+}
+
+.icon-bar{
+	background-color:#333; 
+}
+
+.navbar-toggle{
+	border-color: #ccc;
+}
+
+.navbar .navbar-nav>li{
+	border-left: 1px solid #ccc;
+}
+
+.navbar .navbar-nav>li:last-child{
+	border-right: 1px solid #ccc;
+}
+
+.navbar .navbar-nav>li>a{
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+/*Stuff for home page*/
+.foreground{
+	padding: 0;
+	background-color: rgba(255,255,255,.3);
+	background-image: url('../img/contractor.jpg');
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	background-position:center;
+   
+}
+
+.featured{
+	background-color:#FFF; 
+	/*background-color: #f3df00;
+	*/
+	border:1px solid #999;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.featured>a>img{
+	border:1px solid #999;
+}
+
+.old{
+	text-decoration: line-through;
+	margin-bottom: 0;
+}
+
+.new{
+	font-size: 1.8em;
+	font-weight: 700;
+	color:#cc0000;
+}
+
+.productLink{
+	color: #000;
+}
+
+.productSpacer{
+	height: 52px;
+}
+
+.glyphicon-star{
+	color:#E6D500;
+}
+
+.glyphicon-star-empty{
+	color: #E1E1E1;
+}
+
+
+.categories{
+	margin-top: 20px;
+	background-color: #FFF;
+}
+
+.slot{
+	padding: 10px;
+}
+
+.slot a{
+	text-decoration: none;
+	color: #000;
+}
+
+.slot p{
+	padding: 10px;
+}
+
+/*--Stuff for catalog and checkout page--*/
+
+
+
+.option{
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.catStars{
+	padding-bottom: 20px;
+}
+
+.price{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.cartPrice{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.emph{
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.marT-20{
+	margin-top: 20px;
+}
+
+.marB-20{
+	margin-bottom: 20px;
+}
+
+.marT-10{
+	margin-top: 10px;
+}
+
+.marB-10{
+	margin-bottom: 10px;
+}
+
+.btn-default{
+	background-color: #F1F5F8;
+}
+
+form input:not([type=radio]) { 
+	width: 12em; 
+}
+
+.labelFix{
+	width:10em;
+}
+
+fieldset{
+	margin-top: 25px;
+}
+
+#card{
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+#card>legend{
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.complete{
+	margin-top: 25px;
+}
+
+/*--Stuff for footer--*/
+.footer{
+	border-top: 1px solid #e5e5e5;
+	margin-top: 100px;
+	padding-top: 15px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.lead{
+	margin-bottom: 5px;
+}
+
+.disclaimer{
+	margin-top: 25px;
+	font-size: 12px;
+}
+
+@media (max-width: 990px) {
+	
+	.login{
+		margin-top: 25px
+	}
+
+	.menuitem{
+		border-top: 1px solid #ccc;
+	}
+
+	.featured{
+		left: 50%;
+		width:50%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.foreground{
+		margin: 0;
+		width: 100%;
+		height:auto;
+	
+	}
+
+	.social>div{
+		padding: 15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.brand{
+		text-align: center;
+	}
+
+	.menuitem{
+		text-align: center;
+	}
+
+	.featured{
+		left: 10%;
+		width:80%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.foreground{
+		background-image:none;
+	
+	}
+
+}
