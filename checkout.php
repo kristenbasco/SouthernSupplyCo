@@ -3,7 +3,7 @@
 		<head>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Southern Supply Co. Checkout – Ken San Angelo”</title>
+			<title>Southern Supply Co. Checkout - Group 4</title>
 
 		<?php 
 			include 'header.php';
