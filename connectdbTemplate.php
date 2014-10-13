@@ -1,9 +1,10 @@
 <?php
 	//Personal Info
-	$dbname ="ssc";
-	$dbusername = "jeremy_dev";
-	$dbpass = "password";
-	$dbhost = "localhost";
+
+	$dbname ="DBNAME";
+	$dbusername = "USERNAME";
+	$dbpass = "PASS!";
+	$dbhost = "sulley.cah.ucf.edu";
 
 	//Connects to sulley mysqli
 	$connection = mysqli_connect("$dbhost", "$dbusername", "$dbpass","$dbname");
