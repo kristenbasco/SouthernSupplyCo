@@ -7,7 +7,7 @@
 
 		<?php 
 			include 'header.php';
-			include 'connectdb.php';
+			include 'includes.php';
 		?>
 
 		<div class="container foreground">
@@ -15,7 +15,7 @@
 				
 				<div class="col-md-4 col-md-offset-7 featured">
 					<h2>Daily Deal</h2>
-					<?
+					<?php
 						//Gets info for featured product
 						$result=mysqli_fetch_assoc(mysqli_query($connection,"SELECT productName FROM products WHERE productID=1"));
 						$name=$result['productName'];
