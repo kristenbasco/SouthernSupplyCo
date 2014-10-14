@@ -3,11 +3,8 @@
 function print_stars($rating){
 	
 	$html = '';
-	for($i = 0; $i < $rating; $i++){
-		$html .= '<span class="glyphicon glyphicon-star"></span>';
-	}
-	for($i = 0; $i < (5 - $rating); $i++){
-		$html .= '<span class="glyphicon glyphicon-star-empty"></span>';
+	for($i = 0; $i < 5; $i++){
+		$i < $rating ? $html .= '<span class="glyphicon glyphicon-star"></span>' : $html .= '<span class="glyphicon glyphicon-star-empty"></span>';
 	}
 	echo $html;
 	
@@ -42,7 +39,7 @@ function ssc_query($search_term, $mode = 'search'){
 	}
 
 	// Do Search
-	$result = $connection->query($search_query);
+	$result = $connection->query($the_query);
 	while($results = $result->fetch_array()) {
 	    $result_array[] = $results;
 	}

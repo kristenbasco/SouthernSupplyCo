@@ -7,6 +7,7 @@
 
 		<?php 
 			include 'header.php';
+			include 'includes.php';
 		?>
 		<div class="container">
 			<div class="marT-20 marB-20">

@@ -7,7 +7,7 @@
 
 		<?php 
 			include 'header.php';
-			include 'connectdb.php';
+			include 'includes.php';
 
 			// Query the Database
 			$query = 'SELECT * FROM products';

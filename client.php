@@ -7,6 +7,7 @@
 
 		<?php 
 			include 'header.php';
+			include 'includes.php';
 		?>
 		<div class="container">
 		<h1 class="marB-20">Account Information</h1>

@@ -7,6 +7,7 @@
 
 		<?php 
 			include 'header.php';
+			include 'includes.php';
 		?>
 		<div class="container">
 			<div class="option">

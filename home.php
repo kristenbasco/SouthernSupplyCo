@@ -40,15 +40,16 @@
 										<div class="catStars">';
 
 						//Determines how many stars the product has
-						for($i=0;$i<5;$i++){
-							if($i<$stars){
-								echo'<span class="glyphicon glyphicon-star"></span>';
-							}else{
-								echo'<span class="glyphicon glyphicon-star-empty"></span>';
-							}
-						}
+						// for($i=0;$i<5;$i++){
+						// 	if($i<$stars){
+						// 		echo'<span class="glyphicon glyphicon-star"></span>';
+						// 	}else{
+						// 		echo'<span class="glyphicon glyphicon-star-empty"></span>';
+						// 	}
+						// }
+						print_stars($stars);
+							
 
-											
 						echo'</div>
 									</div>
 									<div class="col-md-3 marT-10 text-right">
