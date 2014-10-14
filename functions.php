@@ -19,30 +19,34 @@ function pre_print_r($array){
 	echo '</pre>';
 }
 
-function ssc_query($term, $mode = 'gallery'){
+function ssc_query($search_term, $mode = 'search'){
+
+	include 'connectdb.php';
 
 	// Build Query
+	$all_query = 'SELECT * FROM products';
+
 	$search_query = 'SELECT * FROM products 
 	WHERE productName
 	LIKE "%'.$search_term.'%" 
 	OR description LIKE "%'.$search_term.'%"
 	OR category LIKE "%'.$search_term.'%"';
 
-	$all_query = 'SELECT * FROM products';
-
 	switch($mode){
 		case 'search':
 			$the_query = $search_query;
-		case 'all':
+			break;
+		case 'catalog':
 			$the_query = $all_query;
+			break;
 	}
 
 	// Do Search
-	$result = $connection->query($the_query);
+	$result = $connection->query($search_query);
 	while($results = $result->fetch_array()) {
 	    $result_array[] = $results;
 	}
-	
-	return $results_array;
+
+	return $result_array;
 
 }

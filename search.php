@@ -20,7 +20,7 @@
 				// Check Length More Than One Character
 				if (strlen($search_term) >= 1 && $search_term !== ' ') {
 
-					ssc_query($search_term);
+					$result_array = ssc_query($search_term, 'search');
 
 				} else {
 					$err_msg = 'Invalid Search. Please Try Again';
