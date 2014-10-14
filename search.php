@@ -20,18 +20,7 @@
 				// Check Length More Than One Character
 				if (strlen($search_term) >= 1 && $search_term !== ' ') {
 
-					// Build Query
-					$query = 'SELECT * FROM products 
-					WHERE productName
-					LIKE "%'.$search_term.'%" 
-					OR description LIKE "%'.$search_term.'%"
-					OR category LIKE "%'.$search_term.'%"';
-
-					// Do Search
-					$result = $connection->query($query);
-					while($results = $result->fetch_array()) {
-					    $result_array[] = $results;
-					}
+					ssc_query($search_term);
 
 				} else {
 					$err_msg = 'Invalid Search. Please Try Again';

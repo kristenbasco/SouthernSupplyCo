@@ -19,3 +19,7 @@ function pre_print_r($array){
 	echo '</pre>';
 }
 
+function ssc_query($term, $mode = 'gallery'){
+	include 'connectdb.php'; 
+	echo $term.', '.$mode;
+}
