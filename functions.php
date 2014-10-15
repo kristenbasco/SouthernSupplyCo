@@ -1,5 +1,6 @@
 <?php
 
+//Prints the stars on screen based on rating from the database
 function print_stars($rating){
 	
 	$html = '';
@@ -10,12 +11,14 @@ function print_stars($rating){
 	
 }
 
+//Adds pre open and close tags around an array
 function pre_print_r($array){
 	echo '<pre>';
 	print_r($array);
 	echo '</pre>';
 }
 
+//Queries the database. Used in search and catalog requests.
 function ssc_query($search_term, $mode = 'search'){
 
 	include 'connectdb.php';
@@ -23,12 +26,14 @@ function ssc_query($search_term, $mode = 'search'){
 	// Build Query
 	$all_query = 'SELECT * FROM products';
 
+	//Pulls all products that match the search terms
 	$search_query = 'SELECT * FROM products 
 	WHERE productName
 	LIKE "%'.$search_term.'%" 
 	OR description LIKE "%'.$search_term.'%"
 	OR category LIKE "%'.$search_term.'%"';
 
+	//Acts based on if it is a search or a catalog call
 	switch($mode){
 		case 'search':
 			$the_query = $search_query;
