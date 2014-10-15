@@ -43,6 +43,7 @@ $user_access="1"; ?>
 				<div class="navbar-form navbar-right">
 					<form action="search.php" method="post" class="input-group" role="search">
 						<input type="text" class="form-control" name="search_term" placeholder="Search">
+						<div id="ajax-search-results"></div>
 						<div class="input-group-btn">
 							<a class="btn btn-default" href="search.php"><button type="submit"><span class="glyphicon glyphicon-search"></span></button></a>
 						</div>

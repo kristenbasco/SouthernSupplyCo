@@ -252,6 +252,25 @@ ul{
 	font-size: 12px;
 }
 
+#ajax-search-results {
+	height: auto;
+	position: absolute;
+	background-color: white;
+	top: 100%;
+	width: 100%;
+	z-index: 999;
+	display: none;
+}
+
+#ajax-search-results ul {
+	height: auto;
+}
+
+##ajax-search-results li {
+	padding: 10px;
+	border-bottom: 1px solid gray;
+}
+
 @media (max-width: 990px) {
 	
 	.login{
