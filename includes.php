@@ -1,4 +1,4 @@
 <?php
-	include 'functions.php';
-	include 'connectdb.php';
+	include 'includes/functions.php';
+	include 'includes/connectdb.php';
 ?>
