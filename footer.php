@@ -50,7 +50,7 @@
 				<div class="row">
 					<div class="col-md-12 text-center disclaimer">
 						<p>This site is not official and is an assignment for a UCF Digital Media course.</p>
-						<p>Designed by Ken San Angelo</p>
+						<p>Designed and developed by Group 4 - Southern Supply Co.</p>
 					</div>
 				</div>
 			</div>
