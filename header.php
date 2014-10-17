@@ -4,6 +4,7 @@ $user_access="1"; ?>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.png">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
